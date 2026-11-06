@@ -1,19 +1,16 @@
-cmake_minimum_required(VERSION 3.21)
+cmake_minimum_required(VERSION 3.16)
 
-project(MojaPierwszaAplikacja LANGUAGES CXX)
+project(LFM LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
-qt_standard_project_setup()
-
-qt_add_executable(MojaPierwszaAplikacja
+qt_add_executable(LFM
     main.cpp
-    mainwindow.hpp
+    mainwindow.h
     mainwindow.cpp
 )
 
-target_link_libraries(MojaPierwszaAplikacja PRIVATE Qt6::Widgets)
+target_link_libraries(LFM PRIVATE Qt6::Widgets)
