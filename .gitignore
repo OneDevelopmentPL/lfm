@@ -1,0 +1,16 @@
+# CMake
+build/
+cmake-build-*/
+.vscode/
+.cache/
+
+# macOS
+.DS_Store
+
+.clang-tidy
+.clangd
+.bar
+.bckup.cpp
+
+# Qt
+*.user
